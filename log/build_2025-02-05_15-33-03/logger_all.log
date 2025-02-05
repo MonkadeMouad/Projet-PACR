@@ -1,0 +1,95 @@
+[0.429s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build'][0m
+[0.429s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fb830378490>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fb830378490>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fb830378970>)[0m
+[0.707s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[0.708s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[0.708s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[0.708s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[0.708s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[0.708s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[0.708s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/profil/monkade1u/PACR/hammou'
+[0.710s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.710s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[0.710s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[0.711s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[0.711s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[0.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[0.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[0.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[0.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[0.728s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[0.728s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[0.728s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[0.729s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[0.729s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[0.731s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.731s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[0.732s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[0.734s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.734s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[0.735s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[0.737s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.737s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[0.738s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[0.739s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(pacr_solutions) by extensions ['ignore', 'ignore_ament_install']
+[0.739s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(pacr_solutions) by extension 'ignore'
+[0.740s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(pacr_solutions) by extension 'ignore_ament_install'
+[0.741s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(pacr_solutions) by extensions ['colcon_pkg']
+[0.741s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(pacr_solutions) by extension 'colcon_pkg'
+[0.741s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(pacr_solutions) by extensions ['colcon_meta']
+[0.742s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(pacr_solutions) by extension 'colcon_meta'
+[0.742s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(pacr_solutions) by extensions ['ros']
+[0.742s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(pacr_solutions) by extension 'ros'
+[0.750s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'pacr_solutions' with type 'ros.ament_python' and name 'pacr_solutions'[0m
+[0.750s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[0.750s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[0.750s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[0.750s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[0.750s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[0.777s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[0.777s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[0.808s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 6 installed packages in /home/profil/monkade1u/ros2_ws/install[0m
+[0.810s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 335 installed packages in /opt/ros/galactic[0m
+[0.811s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[0.924s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'pacr_solutions' build argument 'cmake_args' from command line to 'None'
+[0.924s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'pacr_solutions' build argument 'cmake_target' from command line to 'None'
+[0.924s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'pacr_solutions' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.924s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'pacr_solutions' build argument 'cmake_clean_cache' from command line to 'False'
+[0.925s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'pacr_solutions' build argument 'cmake_clean_first' from command line to 'False'
+[0.925s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'pacr_solutions' build argument 'cmake_force_configure' from command line to 'False'
+[0.925s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'pacr_solutions' build argument 'ament_cmake_args' from command line to 'None'
+[0.925s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'pacr_solutions' build argument 'catkin_cmake_args' from command line to 'None'
+[0.925s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'pacr_solutions' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.925s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'pacr_solutions' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/profil/monkade1u/PACR/hammou/build/pacr_solutions', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/profil/monkade1u/PACR/hammou/install/pacr_solutions', 'merge_install': False, 'path': '/home/profil/monkade1u/PACR/hammou/pacr_solutions', 'symlink_install': False, 'test_result_base': None}[0m
+[0.925s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[0.926s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[0.926s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/profil/monkade1u/PACR/hammou/pacr_solutions' with build type 'ament_python'
+[0.926s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('pacr_solutions', 'ament_prefix_path')
+[0.929s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.930s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/profil/monkade1u/PACR/hammou/install/pacr_solutions/share/pacr_solutions/hook/ament_prefix_path.ps1'
+[0.940s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/profil/monkade1u/PACR/hammou/install/pacr_solutions/share/pacr_solutions/hook/ament_prefix_path.dsv'
+[0.946s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/profil/monkade1u/PACR/hammou/install/pacr_solutions/share/pacr_solutions/hook/ament_prefix_path.sh'
+[0.951s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.951s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.293s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/profil/monkade1u/PACR/hammou/pacr_solutions'
+[1.294s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.294s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.362s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete was interrupted[0m
+[1.362s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete again[0m
+[1.384s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished[0m
+[1.384s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[1.385s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[1.385s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[1.408s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.408s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.408s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[1.430s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[1.430s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/profil/monkade1u/PACR/hammou/install/local_setup.ps1'
+[1.436s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/profil/monkade1u/PACR/hammou/install/_local_setup_util_ps1.py'
+[1.442s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/profil/monkade1u/PACR/hammou/install/setup.ps1'
+[1.451s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/profil/monkade1u/PACR/hammou/install/local_setup.sh'
+[1.457s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/profil/monkade1u/PACR/hammou/install/_local_setup_util_sh.py'
+[1.462s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/profil/monkade1u/PACR/hammou/install/setup.sh'
+[1.472s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/profil/monkade1u/PACR/hammou/install/local_setup.bash'
+[1.477s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/profil/monkade1u/PACR/hammou/install/setup.bash'
+[1.485s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/profil/monkade1u/PACR/hammou/install/local_setup.zsh'
+[1.490s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/profil/monkade1u/PACR/hammou/install/setup.zsh'

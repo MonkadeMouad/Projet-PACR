@@ -58,11 +58,12 @@ class PathPlanningNode(Node):
         if path:
             response.path = self.planner.convert_to_ros_path(path)
             self.path_pub.publish(response.path)
-            return response  # ✅ Valid response
         else:
             self.get_logger().error("No path found")
-            return None  # ❌ Invalid! Causes TypeError
+            # Instead of returning None, return an empty path response.
+            response.path = self.planner.convert_to_ros_path([])
 
+        return response  # Always return a valid response
 
 def main(args=None):
     rclpy.init(args=args)

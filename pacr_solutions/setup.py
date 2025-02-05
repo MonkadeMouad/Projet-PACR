@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'path_planning = pacr_solutions.path_planning:main',
         ],
     },
 )
