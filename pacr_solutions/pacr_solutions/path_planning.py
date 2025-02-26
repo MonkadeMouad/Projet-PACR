@@ -27,7 +27,7 @@ class PathPlanningService(Node):
         # Subscriber to the map
         self.map_sub = self.create_subscription(
             OccupancyGrid,
-            '/map',
+            '/costmap',
             self.map_callback,
             qos_profile
         )
