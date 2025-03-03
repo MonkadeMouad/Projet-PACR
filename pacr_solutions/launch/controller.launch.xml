@@ -1,0 +1,24 @@
+<launch>
+    <!-- Arguments (paramètres) éventuels -->
+    <arg name="use_sim_time" default="true"/>
+    <arg name="max_lin_speed" default="0.4"/>
+    <arg name="max_ang_speed" default="1.0"/>
+    <arg name="goal_tolerance" default="0.2"/>
+    <arg name="safety_dist" default="0.5"/>
+
+    <!-- Lancement du nœud de contrôle -->
+    <node
+        pkg="pacr_solutions"
+        exec="controller.py"
+        name="controller_node"
+        output="screen">
+
+        <!-- Passage des paramètres -->
+        <param name="max_linear_speed" value="$(var max_lin_speed)"/>
+        <param name="max_angular_speed" value="$(var max_ang_speed)"/>
+        <param name="goal_tolerance" value="$(var goal_tolerance)"/>
+        <param name="obstacle_safety_dist" value="$(var safety_dist)"/>
+        <param name="use_sim_time" value="$(var use_sim_time)"/>
+
+    </node>
+</launch>

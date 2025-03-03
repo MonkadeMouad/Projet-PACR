@@ -27,6 +27,7 @@ setup(
     entry_points={
         'console_scripts': [
             'path_planning = pacr_solutions.path_planning:main',
+            'controller_node = pacr_solutions.controller_node:main',
         ],
     },
 )

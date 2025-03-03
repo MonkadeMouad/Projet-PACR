@@ -1,0 +1,28 @@
+<launch>
+    <!-- arguments -->
+    <arg name="gazebo_gui" default="false" description="launch gazebo gui"/>
+    <arg name="rviz" default="true" description="launch rviz"/>
+    <arg name="control_frequency" default="10.0" description="control frequency"/>
+    <arg name="v_max" default="0.5" description="maximum linear velocity"/>
+    <arg name="w_max" default="1.0" description="maximum angular velocity"/>
+
+    <!-- simulation -->
+    <include file="$(find-pkg-share pacr_simulation)/launch/pacr_simulation.launch.xml">
+        <arg name="gazebo_gui" value="$(var gazebo_gui)"/>
+    </include>
+
+    <!-- rviz -->
+    <node pkg="rviz2" exec="rviz2"
+          args="--display-config $(find-pkg-share pacr_simulation)/config/config.rviz"
+          if="$(var rviz)"/>
+
+    <!-- testing node (test_goto) -->
+    <!-- Ce noeud se trouve dans pacr_simulation, donc on appelle le pkg="pacr_simulation" -->
+    <node pkg="pacr_simulation" exec="test_goto" output="screen">
+        <remap from="odom" to="/controlled_robot/odom"/>
+        <remap from="cmd_vel" to="/controlled_robot/cmd_vel"/>
+        <param name="control_frequency" value="$(var control_frequency)"/>
+        <param name="v_max" value="$(var v_max)"/>
+        <param name="w_max" value="$(var w_max)"/>
+    </node>
+</launch>
