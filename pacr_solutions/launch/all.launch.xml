@@ -1,0 +1,18 @@
+<launch>
+    <arg name="control_frequency" default="10.0" description="control frequency"/>
+    <arg name="v_max" default="0.5" description="maximum linear velocity"/>
+    <arg name="w_max" default="1.0" description="maximum angular velocity"/>
+
+    <!-- Inclusion des autres fichiers de lancement -->
+    <include file="$(find-pkg-share pacr_simulation)/launch/executive.launch.xml"/>
+
+    <!-- Lancer le noeud Task Planner (très important) -->
+    <node pkg="pacr_solutions" exec="task_planner_node" name="task_planner_node" output="screen"/>
+
+    <!-- Planificateur de chemin -->
+    <node pkg="pacr_solutions" exec="path_planning" name="path_planning" output="screen"/>
+
+    <!-- Contrôleur -->
+    <node pkg="pacr_solutions" exec="controller_node" name="controller_node" output="screen"/>
+
+</launch>

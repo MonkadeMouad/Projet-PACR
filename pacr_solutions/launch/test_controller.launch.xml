@@ -1,0 +1,13 @@
+<launch>
+    <arg name="control_frequency" default="10.0" description="control frequency"/>
+    <arg name="v_max" default="0.5" description="maximum linear velocity"/>
+    <arg name="w_max" default="1.0" description="maximum angular velocity"/>
+    <!-- Inclusion du fichier de lancement de pacr_simulation -->
+     <include file="$(find-pkg-share pacr_solutions)/launch/test_path_planning.launch.xml"/>
+
+
+       <node pkg="pacr_solutions" exec="controller_node" output="screen">
+       
+    </node>
+
+</launch>

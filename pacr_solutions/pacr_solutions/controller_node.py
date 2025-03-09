@@ -83,7 +83,7 @@ class LocalControllerNode(Node):
             v = 0.0
             w = 0.5 * angle_error
         else:
-            v = 0.2
+            v = 0.6
             w = 0.0
 
         # saturation ...
